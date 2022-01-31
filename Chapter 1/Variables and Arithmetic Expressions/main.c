@@ -20,6 +20,7 @@ int main() {
         printf("%3d %6d\n", fahr, celsius);
         fahr += step;
     }
+
     /* Part 2 */
     printf("\nThe second variant of this task solution:\n");
     float celsius_2, fahr_2 = 0;
