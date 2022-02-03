@@ -9,7 +9,10 @@ int main() {
     printf("world");
     printf(".\n\n");
 
-    /* Interesting addition */
+    /* Interesting addition:
+     * The way \number can be used
+     */
+
     printf("\\1: \1\n");
     printf("\\2: \2\n");
     printf("\\3: \3\n");
