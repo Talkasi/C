@@ -3,10 +3,12 @@
 #define MAX_LINE 1000
 #define STOP_LEN 0
 
-int getline(char line[], int maxline);
+int getline(char s[], int lim);
 
 void copy(char to[], char from[]);
 char * reversed(char line[], int len);
+
+/* TODO: fix rubbish bug */
 
 int main() {
     int len, max = 0;
@@ -35,8 +37,8 @@ char * reversed(char line[], int len) {
     }
 
     copy(line, s);
-    if (line[len - 1] == '\n') {
-        line[len - 1] = ';';
+    if (line[len - 1] == '\n' || line[len - 1] == '\0' || line[len - 1] == '\7' ) {
+        line[len - 1] = '\0';
     }
     return line;
 }
@@ -45,7 +47,9 @@ int getline(char s[], int lim) {
     int c, i;
 
     for (i = 0; i < lim - 1 && (c = getchar()) != '.'; ++i) {
-        s[i] = c;
+        if (s[i] != '\n' || s[i] != '\0' || s[i] != '\7'){
+            s[i] = c;
+        }
     }
 
     s[i] = '\0';
