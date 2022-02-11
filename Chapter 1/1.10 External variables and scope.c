@@ -53,10 +53,8 @@ int getline(void) {
     int c, i;
     extern char line[];
 
-    for (i = 0; i < MAX_LINE - 1 && (c = getchar()) != '.'; ++i) {
-        if (c != '\n') {
-            line[i] = c;
-        }
+    for (i = 0; i < MAX_LINE - 1 && ((c = getchar()) != '.') && c != '\n' ; ++i) {
+        line[i] = c;
     }
 
 
