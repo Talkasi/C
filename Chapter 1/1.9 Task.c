@@ -6,7 +6,8 @@
 int getline(char s[], int lim);
 
 void copy(char to[], char from[]);
-char * reversed(char line[], int len);
+
+char *reversed(char line[], int len);
 
 /* TODO: fix rubbish bug */
 
@@ -28,7 +29,7 @@ int main() {
     }
 }
 
-char * reversed(char line[], int len) {
+char *reversed(char line[], int len) {
     int i;
     char s[len];
 
@@ -37,7 +38,7 @@ char * reversed(char line[], int len) {
     }
 
     copy(line, s);
-    if (line[len - 1] == '\n' || line[len - 1] == '\0' || line[len - 1] == '\7' ) {
+    if (line[len - 1] == '\n' || line[len - 1] == '\0' || line[len - 1] == '\7') {
         line[len - 1] = '\0';
     }
     return line;
@@ -46,10 +47,8 @@ char * reversed(char line[], int len) {
 int getline(char s[], int lim) {
     int c, i;
 
-    for (i = 0; i < lim - 1 && (c = getchar()) != '.'; ++i) {
-        if (s[i] != '\n' || s[i] != '\0' || s[i] != '\7'){
-            s[i] = c;
-        }
+    for (i = 0; i < lim - 1 && (c = getchar()) != '.' && c != '\n'; ++i) {
+        s[i] = c;
     }
 
     s[i] = '\0';
@@ -59,7 +58,7 @@ int getline(char s[], int lim) {
 void copy(char to[], char from[]) {
     int i = 0;
 
-    while ((to[i] = from[i]) != '\0'){
+    while ((to[i] = from[i]) != '\0') {
         ++i;
     }
 }
