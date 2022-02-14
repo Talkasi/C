@@ -12,7 +12,7 @@ void copy(void);
 
 char *reversed(char line[], int len);
 
-/* TODO:  - fix bug;
+/* TODO:
  *        - try to add reversed here */
 
 int main() {
@@ -30,10 +30,10 @@ int main() {
     }
     if (max > 0) {
         printf("Longest line is %s\n", longest_line);
-        // printf("Reversed line is %s", reversed(longest_line, max));
+        printf("Reversed line is %s", reversed(longest_line, max));
     }
 }
-/*
+
 char *reversed(char line[], int len) {
     int i;
     char s[len];
@@ -43,12 +43,13 @@ char *reversed(char line[], int len) {
     }
 
     copy();
+    /*
     if (line[len - 1] == '\n' || line[len - 1] == '\0' || line[len - 1] == '\7') {
         line[len - 1] = '\0';
-    }
+    } */
     return line;
 }
-*/
+
 int getline(void) {
     int c, i;
     extern char line[];
