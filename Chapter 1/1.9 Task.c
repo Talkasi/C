@@ -9,8 +9,6 @@ void copy(char to[], char from[]);
 
 char *reversed(char line[], int len);
 
-/* TODO: fix rubbish bug */
-
 int main() {
     int len, max = 0;
     char line[MAX_LINE];

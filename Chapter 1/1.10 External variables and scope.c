@@ -43,10 +43,7 @@ char *reversed(char line[], int len) {
     }
 
     copy();
-    /*
-    if (line[len - 1] == '\n' || line[len - 1] == '\0' || line[len - 1] == '\7') {
-        line[len - 1] = '\0';
-    } */
+
     return line;
 }
 
