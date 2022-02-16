@@ -12,9 +12,6 @@ void copy(void);
 
 char *reversed(char line[], int len);
 
-/* TODO:
- *        - try to add reversed here */
-
 int main() {
     int len;
     extern int max;
