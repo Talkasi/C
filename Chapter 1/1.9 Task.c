@@ -24,6 +24,7 @@ int main() {
     if (max > 0) {
         printf("Longest line is %s\n", longest_line);
         printf("Reversed line is %s", reversed(longest_line, max));
+        /* Another way to solve bug with rubish was to use %.'len's, but it is harder to implement */
     }
 }
 
