@@ -36,6 +36,7 @@ char *reversed(char line[], int len) {
     }
 
     copy(line, s);
+    line[len] = '\0';
     return line;
 }
 
