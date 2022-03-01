@@ -1,0 +1,3 @@
+C:/Users/Talkasi/The_C_programming_language/Chapter 2/Workflow/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Talkasi/The_C_programming_language/Chapter 2/Workflow/cmake-build-debug/CMakeFiles/Workflow.dir
+C:/Users/Talkasi/The_C_programming_language/Chapter 2/Workflow/cmake-build-debug/CMakeFiles/rebuild_cache.dir
