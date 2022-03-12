@@ -21,7 +21,7 @@ int twice_as_old_v1(int father_age, int son_age) {
     return n_years;
 }
 
-/* While the solution consist in 1 line)) */
+/* While the solution consist from 1 line)) */
 int twice_as_old_v2(int father_age, int son_age) {
     return abs(father_age - son_age * 2);
 }
