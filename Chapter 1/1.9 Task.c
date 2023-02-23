@@ -4,9 +4,7 @@
 #define STOP_LEN 0
 
 int getline(char s[], int lim);
-
 void copy(char to[], char from[]);
-
 char *reversed(char line[], int len);
 
 int main()
