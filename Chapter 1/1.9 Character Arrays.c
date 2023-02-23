@@ -7,7 +7,8 @@ int getline(char line[], int maxline);
 
 void copy(char to[], char from[]);
 
-int main() {
+int main()
+{
     int len, max = 0;
     char line[MAX_LINE];
     char longest_line[MAX_LINE];
@@ -23,7 +24,8 @@ int main() {
         printf("Longest line is %s", longest_line);
 }
 
-int getline(char s[], int lim) {
+int getline(char s[], int lim)
+{
     int c, i;
 
     for (i = 0; i < lim - 1 && (c = getchar()) != '.'; ++i) {
@@ -34,10 +36,11 @@ int getline(char s[], int lim) {
     return i;
 }
 
-void copy(char to[], char from[]) {
+void copy(char to[], char from[])
+{
     int i = 0;
 
-    while ((to[i] = from[i]) != '\0'){
+    while ((to[i] = from[i]) != '\0') {
         ++i;
     }
 }

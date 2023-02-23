@@ -8,16 +8,18 @@
 /* Declaration */
 int power(int base, int n);
 
-int main() {
+int main()
+{
     int i;
 
     for (i = POWER_START; i < CURRENT_POWER; ++i) {
-        printf("2 ** %2d = %1d;\n-3 ** %2d = %1d;\n\n", i, power(2, i), i, power(-3, i) );
+        printf("2 ** %2d = %1d;\n-3 ** %2d = %1d;\n\n", i, power(2, i), i, power(-3, i));
     }
 }
 
 /* Raise the base to n-th power if n >= 0 */
-int power(int base, int n) {
+int power(int base, int n)
+{
     int i, p = 1;
 
     if (n < 0) return ERROR;
@@ -28,4 +30,3 @@ int power(int base, int n) {
         return p;
     }
 }
-

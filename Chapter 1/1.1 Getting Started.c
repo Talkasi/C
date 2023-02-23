@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int main() {
+int main()
+{
     /* Part 1 */
     printf("Hello, world.\n\n");
 

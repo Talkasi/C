@@ -2,10 +2,9 @@
 
 int main()
 {
-	int c;
+    int c;
 
-	c = 10;
-	printf("%d\n", EOF);
-	printf("%d\n", c);
+    c = 10;
+    printf("%d\n", EOF);
+    printf("%d\n", c);
 }
-

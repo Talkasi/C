@@ -14,7 +14,7 @@
 /* ├───────────────────────┤ 	  */
 /* │      Program name     │  	  */
 /* ├───────────────────────┤      */
-/* │     # of arguments    │ %esp */ 
+/* │     # of arguments    │ %esp */
 /* ├───────────────────────┤ 	  */
 /* │     Unmapped Memory   │ 	  */
 /* ├───────────────────────┤ 	  */
@@ -23,13 +23,13 @@
 /* 0x08048000			  */
 
 
-int main() {
-	int n1, n2, n3;
+int main()
+{
+    int n1, n2, n3;
 
-	n1 = n2 = n3 = 0;
+    n1 = n2 = n3 = 0;
 
-	printf("n1: value %d - address decimal %d - address hex %hx\n", n1, &n1, &n1);
-	printf("n2: value %d - address decimal %d - address hex %hx\n", n2, &n2, &n2);
-	printf("n3: value %d - address decimal %d - address hex %hx\n", n3, &n3, &n3);
-
+    printf("n1: value %d - address decimal %d - address hex %hx\n", n1, &n1, &n1);
+    printf("n2: value %d - address decimal %d - address hex %hx\n", n2, &n2, &n2);
+    printf("n3: value %d - address decimal %d - address hex %hx\n", n3, &n3, &n3);
 }

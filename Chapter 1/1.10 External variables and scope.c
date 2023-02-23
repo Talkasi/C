@@ -12,7 +12,8 @@ void copy(void);
 
 char *reversed(char line[], int len);
 
-int main() {
+int main()
+{
     int len;
     extern int max;
     extern char longest_line[MAX_LINE];
@@ -31,7 +32,8 @@ int main() {
     }
 }
 
-char *reversed(char line[], int len) {
+char *reversed(char line[], int len)
+{
     int i;
     char s[len];
 
@@ -44,11 +46,12 @@ char *reversed(char line[], int len) {
     return line;
 }
 
-int getline(void) {
+int getline(void)
+{
     int c, i;
     extern char line[];
 
-    for (i = 0; i < MAX_LINE - 1 && ((c = getchar()) != '.') && c != '\n' ; ++i) {
+    for (i = 0; i < MAX_LINE - 1 && ((c = getchar()) != '.') && c != '\n'; ++i) {
         line[i] = c;
     }
 
@@ -57,7 +60,8 @@ int getline(void) {
     return i;
 }
 
-void copy(void) {
+void copy(void)
+{
     int i = 0;
     extern char line[], longest_line[];
 

@@ -9,7 +9,8 @@ void copy(char to[], char from[]);
 
 char *reversed(char line[], int len);
 
-int main() {
+int main()
+{
     int len, max = 0;
     char line[MAX_LINE];
     char longest_line[MAX_LINE];
@@ -24,11 +25,12 @@ int main() {
     if (max > 0) {
         printf("Longest line is %s\n", longest_line);
         printf("Reversed line is %s", reversed(longest_line, max));
-        /* Another way to solve bug with rubish was to use %.'len's, but it is harder to implement */
+        /* Another way to solve bug with rubbish was to use %.'len's, but it is harder to implement */
     }
 }
 
-char *reversed(char line[], int len) {
+char *reversed(char line[], int len)
+{
     int i;
     char s[len];
 
@@ -41,7 +43,8 @@ char *reversed(char line[], int len) {
     return line;
 }
 
-int getline(char s[], int lim) {
+int getline(char s[], int lim)
+{
     int c, i;
 
     for (i = 0; i < lim - 1 && (c = getchar()) != '.' && c != '\n'; ++i) {
@@ -52,7 +55,8 @@ int getline(char s[], int lim) {
     return i;
 }
 
-void copy(char to[], char from[]) {
+void copy(char to[], char from[])
+{
     int i = 0;
 
     while ((to[i] = from[i]) != '\0') {

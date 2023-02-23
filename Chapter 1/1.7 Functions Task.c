@@ -1,14 +1,15 @@
 #include <stdio.h>
 
 /* Definition */
-#define LOWER_T (float)0
-#define UPPER_T (float)300
-#define STEP (float)20
+#define LOWER_T (float) 0
+#define UPPER_T (float) 300
+#define STEP (float) 20
 
 /* Print Fahrenheit-Celsius table */
 int temperature(float fahr, float upper);
 
-int main() {
+int main()
+{
     printf("Fahrenheit-Celsius table:\n");
 
     /* Initialisation */
@@ -17,7 +18,8 @@ int main() {
     temperature(fahr, upper);
 };
 
-int temperature(float fahr, float upper) {
+int temperature(float fahr, float upper)
+{
     float celsius;
 
     while (fahr <= upper) {

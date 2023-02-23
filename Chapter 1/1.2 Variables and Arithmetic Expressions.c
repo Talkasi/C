@@ -7,7 +7,8 @@
 
 /* Print Fahrenheit-Celsius table */
 
-int main() {
+int main()
+{
     /* Part 1 */
     printf("Fahrenheit-Celsius table:\n");
     /* Initialisation */

@@ -6,15 +6,15 @@
 /* Functions still only work on single characters but the terminal waits */
 /* with submitting the characters to the program until the whole line wasn't entered */
 
-int main() {
-	long c, prev_c = 0;
+int main()
+{
+    long c, prev_c = 0;
 
-	while ((c = getchar()) != EOF) {
-		if (prev_c == ' ' && c == ' ')
-			;
-		else 
-			putchar(c);
-		prev_c = c;
-	}
+    while ((c = getchar()) != EOF) {
+        if (prev_c == ' ' && c == ' ')
+            ;
+        else
+            putchar(c);
+        prev_c = c;
+    }
 }
-
