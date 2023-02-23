@@ -5,17 +5,18 @@
 
 int getline(char s[], int len);
 
-int main() {
+int main()
+{
     char line[MAX_LINE_LEN];
     int len;
 
     while ((len = getline(line, MAX_LINE_LEN)) > 0)
         if (len > MIN_LEN_WANTED)
             printf("String is larger %d chars: \n%s\n", MIN_LEN_WANTED, line);
-
 }
 
-int getline(char s[], int len) {
+int getline(char s[], int len)
+{
     int c;
     int i;
 
