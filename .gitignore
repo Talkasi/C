@@ -1,3 +1,6 @@
 /Chapter 1/Workflow/
 *.out
 .clang-format
+*.s
+*.o
+*.i
